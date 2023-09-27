@@ -1,0 +1,294 @@
+body{
+    margin: 0;
+}
+*{
+    scroll-behavior: smooth;
+}
+nav{
+
+    height: 4vmax;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.555);
+    position: sticky;
+    top: 0%;
+    background-color: white;
+    z-index: 10000;
+}
+.left{
+
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+.left>a{
+    text-decoration: none;
+    color: green;
+    font-size: 40px;
+    font-family: 'mooli';
+    letter-spacing: 5px;
+    font-weight: 500;
+}
+.mid{
+   
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-self: stretch;
+}
+.mid>a{
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1vmax;
+    color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+}
+.mid>a:hover{
+    border-bottom: 2px solid salmon;
+    color: crimson;
+}
+.right{
+
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+.right>img{
+    width: 2vmax;
+
+ 
+}
+.right>h3>a{
+    text-decoration: none;
+    color:green;
+}
+
+.home{
+    display: flex;
+    height: 90vh;
+    background-image: linear-gradient(to right, rgb(79, 187, 187),rgb(102, 102, 156));
+}
+.container{
+    
+    width:100%;
+    height: 100%;
+}
+#rightcontainer{
+    display: flex;
+    justify-content: flex-end;
+}
+#rightcontainer>img{
+    margin: 5vmax;
+    filter: drop-shadow(0 0 10px black);
+}
+#leftcontainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3vmax;
+    box-sizing: border-box;
+}
+#leftcontainer>h1{
+    font-family: 'Arvo', serif;
+font-family: 'Croissant One', cursive;
+font-family: 'Mooli', sans-serif;
+font-size: 4vmax;
+margin-left: 15%;
+letter-spacing: 15px;
+}
+#leftcontainer>h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2vmax;
+    margin-top: -6%;
+    margin-left: 19%;
+    letter-spacing: 10px;
+}
+#leftcontainer>p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2vmax;
+    margin-left: 17%;
+    margin-top: -1%;
+}
+#leftcontainer>button{
+    width:10vmax;
+    padding: 0.8vmax;
+    margin-left: 17%;
+    border-radius: 2vmax;
+    border:none;
+    background-color: rgb(236, 104, 89);
+    color: white;
+    font-family: sans-serif;
+    font-size: larger;
+    cursor: pointer;
+}
+#leftcontainer>button:hover{
+    background-color: rgb(240, 62, 42);
+}
+
+#products> h1{
+    font-size: 2.5vmax;
+    margin: 5vmax auto;
+    border-bottom: 5px solid cyan;
+    width: 25vw;
+    padding: 1vmax;
+    text-align: center;
+}
+#products> h1 + a{
+    text-decoration: none;
+    color: green;
+    font-size: 40px;
+    font-family: 'mooli';
+    letter-spacing: 5px;
+    font-weight: 500;
+    margin: 5vmax auto;
+}
+.productcontainer{
+
+    display: flex;
+    margin: auto;
+    height: 100%;
+    max-width: 80vw;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.product{
+
+    height: 30vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1vmax;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.product>img{
+    width: 20vmax;
+    border-radius: 1vmax;
+}
+.product:hover{
+    transform: translateY(-10px);
+}
+.product>h4{
+    font-size: 1vmax;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.product>h5{
+    font-size: 0.8vmax;
+    margin-top: -4%;
+}
+
+.about1{
+    background-image: linear-gradient(to right, rgb(79, 187, 187),rgb(102, 102, 156));
+    height: 60vmax;
+    display: flex;
+
+}
+.about1>a{
+    text-decoration: none;
+    color: rgb(4, 189, 4);
+    font-size: 120px;
+    font-family: 'mooli';
+    letter-spacing: 5px;
+    font-weight: 500;
+    display: flex;
+    margin-left: 70vmax;
+    margin-top: 25%;
+    text-shadow: 10px 10px 100px black;
+
+}
+.about1>a:hover{
+   color: rgb(41, 243, 41);
+   transition: all 0.3s;
+}
+
+.about1>h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 3vmax;
+    color: rgb(6, 212, 6);
+    margin-left:-50% ;
+    margin-top: 5%;
+
+}
+.about1>p{
+    font-size: 1.5vmax;
+    color: black;
+    margin-left: -50% ;
+    text-wrap: wrap;
+    margin-top: 17%;
+    line-height: 70px;
+}
+.about1> button{
+    height: 3vmax;
+    width: 10vmax;
+    padding: 0.8vmax;
+    margin-left: -52% ;
+    margin-top: 43%;
+    font-family: 'mooli';
+    font-size: 1vmax;
+    border-radius: 2vmax;
+    border: none;
+    background-color: rgb(13, 187, 13);
+    font-weight: 500;
+    cursor: pointer;
+}
+.about1> button:hover{
+    background-color: rgb(41, 243, 41);
+    transition: all 0.3s;
+}
+.mail{
+    text-decoration: none;
+    color: blue;
+}
+.mail:hover{
+    color: rgb(41, 243, 41);
+}
+
+.customer{
+
+
+    height: 30vh;
+}
+.customer>h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 3vmax;
+    color: rgb(205, 6, 212);
+    margin-left:33% ;
+    margin-top: 7%;
+}
+.customer>img{
+    width: 5vmax;
+    height: 5vmax;
+    margin-left: 35%;
+    margin-top: 4%;
+    cursor: pointer;
+}
+.customer>img:hover{
+    transform: translateY(-6px);
+    transition: all 0.3s;
+}
+
+.customer>h3>a{
+    margin-left: 33%;
+    text-decoration: none;
+    color: rgb(205, 6, 212);
+    font-size: large;
+}
+.customer>h3>a:hover{
+    color: rgb(41, 243, 41);
+    transform: translateY(-10px);
+}
+#cu{
+    width: 30vmax;
+    height: 20vmax;
+    margin-left: 50%;
+    margin-top: -500%;
+
+}
+footer{
+    margin-top: 18vmax;
+    height: 10vmax;
+    background-color: rgba(31, 30, 30, 0.904);
+}
